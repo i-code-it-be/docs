@@ -84,6 +84,10 @@ The table name.
 `comment` **string**\
 The table comment.
 
+#### Fields
+
+This holds an array of initial fields used for the collection. You can use the same model as used in [Fields](/reference/system/fields.html) to submit fields here. This should also hold the primary key! If this is not present the collection will make a auto-incremented primary key field named id.
+
 ::: tip
 
 ["folder" collections do not hold any data](/configuration/data-model#sorting-grouping), hence their schema would be
@@ -122,7 +126,21 @@ The table comment.
 	"schema": {
 		"name": "pages",
 		"comment": null
-	}
+	},
+	  "fields": [
+	  {
+	    "field": "title",
+	    "type": "string",
+	    "meta": {
+	      "icon": "title"
+	    },
+	    "schema": {
+	      "is_primary_key": true,
+	      "is_nullable": false
+	    }
+	  }
+	  ]
+
 }
 ```
 
