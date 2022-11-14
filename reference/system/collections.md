@@ -86,7 +86,7 @@ The table comment.
 
 #### Fields
 
-This holds an array of initial fields used for the collection. You can use the same model as used in [Fields](/reference/system/fields.html) to submit fields here. This should also hold the primary key! If this is not present the collection will make a auto-incremented primary key field named id.
+This holds an array of initial fields used for the collection. You can use the same model as used in [Fields](/reference/system/fields.html) to submit fields here. This should also hold the primary key! If this is not present the collection will make an auto-incremented primary key field named id.
 
 ::: tip
 
